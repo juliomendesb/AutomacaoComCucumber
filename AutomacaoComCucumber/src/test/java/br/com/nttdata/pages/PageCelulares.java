@@ -16,10 +16,17 @@ public class PageCelulares extends AttributesCelulares {
     }
 
     public void fecharPopUpSeVisivel(){
-        WebElement elementoPopUpPromocao = driver.findElement(popUpPromocao);
 
-        if(elementoPopUpPromocao.isDisplayed()){
-            elementoPopUpPromocao.click();
+        try{
+            WebElement elementoPopUpPromocao = driver.findElement(popUpPromocao);
+
+            if(elementoPopUpPromocao.isDisplayed()){
+                elementoPopUpPromocao.click();
+            }
+        } catch (Exception e) {
+            System.out.println("O elemento não foi encontrado");
         }
+
+
     }
 }

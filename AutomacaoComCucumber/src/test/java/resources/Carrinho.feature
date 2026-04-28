@@ -7,7 +7,7 @@ Funcionalidade: Colocar produto no carrinho de compras
   @CenarioCarrinho
   Cenario: Adicionar item ao carrinho com sucesso e verificar preço
     Dado que acesso o site "https://store.vivo.com.br/"
-    E navego até a seção de Celulares
+    E navego até a seção de "Celulares"
     E seleciono o segundo produto exibido
     E verifico o preço do produto
     Quando adiciono o produto ao carrinho

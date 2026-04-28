@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/java/resources",
         glue = {"br.com.nttdata.steps", "br.com.nttdata.hooks"},
         plugin = {"pretty", "html:target/cucumber-reports.html"},
-        tags = ""
+        tags = "@CenarioCarrinho"
 )
 public class TestRunner {
 }
